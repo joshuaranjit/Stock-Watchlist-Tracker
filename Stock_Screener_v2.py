@@ -16,9 +16,47 @@ os.makedirs(pdf_folder, exist_ok=True)
 print(f"PDFs will be saved in the directory: {pdf_folder}")
 
 stock_urls = {
+    "PGINVIT": "https://www.tickertape.in/stocks/powergrid-infrastructure-investment-trust-PGIN",
     "TMB": "https://www.tickertape.in/stocks/tamilnad-mercantile-bank-TMB",
+    "IDFC": "https://www.tickertape.in/stocks/idfc-IDFC",
+    "ARE&M": "https://www.tickertape.in/stocks/amara-raja-batteries-AMAR",
+    "NATCOPHARM": "https://www.tickertape.in/stocks/natco-pharma-NATP",
+    "INFY": "https://www.tickertape.in/stocks/infosys-INFY",
+    "IDFCFIRSTB": "https://www.tickertape.in/stocks/idfc-first-bank-IDFB",
+    "TECHM": "https://www.tickertape.in/stocks/tech-mahindra-TEML",
+    "KTKBANK": "https://www.tickertape.in/stocks/karnataka-bank-KBNK",
+    "ITC": "https://www.tickertape.in/stocks/itc-ITC",
+    "INDUSINDBK": "https://www.tickertape.in/stocks/indusind-bank-INBK",
+    "FEDERALBNK": "https://www.tickertape.in/stocks/federal-bank-FED",
+    "TCS": "https://www.tickertape.in/stocks/tata-consultancy-services-TCS",
+    "SOUTHBANK": "https://www.tickertape.in/stocks/south-indian-bank-SIBK",
+    "DRREDDY": "https://www.tickertape.in/stocks/drreddys-laboratories-REDY",
+    "MANAPPURAM": "https://www.tickertape.in/stocks/manappuram-finance-MNFL",
+    "MHRIL": "https://www.tickertape.in/stocks/mahindra-holidays-and-resorts-india-MAHH",
+    "TATACHEM": "https://www.tickertape.in/stocks/tata-chemicals-TTCH",
+    "MUTHOOTFIN": "https://www.tickertape.in/stocks/muthoot-finance-MUTT",
+    "THANGAMAYL": "https://www.tickertape.in/stocks/thanga-mayil-jewellery-THNG",
+    "TATAMTRDVR": "https://www.tickertape.in/stocks/tata-motors---dvr-TAMdv",
+    "HCLTECH": "https://www.tickertape.in/stocks/hcl-technologies-HCLT",
+    "TATASTEEL": "https://www.tickertape.in/stocks/tata-steel-TISC",
+    "BAJAJ-AUTO": "https://www.tickertape.in/stocks/bajaj-auto-BAJA",
+    "CIPLA": "https://www.tickertape.in/stocks/cipla-CIPL",
+    "TATAPOWER": "https://www.tickertape.in/stocks/tata-power-company-TTPW",
+    "IRFC": "https://www.tickertape.in/stocks/indian-railway-finance-corporation-IRF",
+    "ZYDUSLIFE": "https://www.tickertape.in/stocks/cadila-healthcare-CADI",
+    "EXIDEIND": "https://www.tickertape.in/stocks/exide-industries-EXID",
+    "STOVEKRAFT": "https://www.tickertape.in/stocks/stove-kraft-STOVE",
+    "ICICIGI": "https://www.tickertape.in/stocks/icici-lombard-general-insurance-company-ICIL",
+    "M&M": "https://www.tickertape.in/stocks/mahindra-and-mahindra-MAHM",
+    "BIOCON": "https://www.tickertape.in/stocks/biocon-BION",
+    "KALYANKJIL": "https://www.tickertape.in/stocks/kalyan-jewellers-india-KALYA",
+    "PETRONET": "https://www.tickertape.in/stocks/petronet-lng-PLNG",
+    "HEROMOTOCO": "https://www.tickertape.in/stocks/hero-motocorp-HROM",
+    "CUPID": "https://www.tickertape.in/stocks/cupid-CUCO",
     "JYOTHYLAB": "https://www.tickertape.in/stocks/jyothy-labs-JYOI",
-    "INDHOTEL": "https://www.tickertape.in/stocks/indian-hotels-company-IHTL"
+    "INDHOTEL": "https://www.tickertape.in/stocks/indian-hotels-company-IHTL",
+    "ZENSARTECH": "https://www.tickertape.in/stocks/zensar-technologies-ZENT",
+    "TTKPRESTIG": "https://www.tickertape.in/stocks/ttk-prestige-TTKL"
 }
 
 errors = []  # To store error messages
@@ -95,3 +133,14 @@ for pdf_file in os.listdir(pdf_folder):
     os.remove(os.path.join(pdf_folder, pdf_file))
 os.rmdir(pdf_folder)
 print("Cleanup completed.")
+
+# To Run this please follow the below steps!
+
+# Change to project directory
+# 1. cd "/Users/joshuaranjit/Web Dev/Tickertape-Stock-Scrapper/"
+
+# Activate environment
+# 2. source "/Users/joshuaranjit/Web Dev/Tickertape-Stock-Scrapper/mp_scrapper_environment/bin/activate"
+
+# Deactivate Environment
+# 3. deactivate
