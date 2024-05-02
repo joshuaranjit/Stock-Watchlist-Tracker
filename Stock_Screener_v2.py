@@ -56,7 +56,8 @@ stock_urls = {
     "JYOTHYLAB": "https://www.tickertape.in/stocks/jyothy-labs-JYOI",
     "INDHOTEL": "https://www.tickertape.in/stocks/indian-hotels-company-IHTL",
     "ZENSARTECH": "https://www.tickertape.in/stocks/zensar-technologies-ZENT",
-    "TTKPRESTIG": "https://www.tickertape.in/stocks/ttk-prestige-TTKL"
+    "TTKPRESTIG": "https://www.tickertape.in/stocks/ttk-prestige-TTKL",
+    "TRENT": "https://www.tickertape.in/stocks/trent-TREN"
 }
 
 errors = []  # To store error messages
